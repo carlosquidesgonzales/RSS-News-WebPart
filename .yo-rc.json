@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "version": "1.7.1",
+    "libraryName": "rssproject",
+    "libraryId": "685416d5-cb88-4035-998d-927883164834",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

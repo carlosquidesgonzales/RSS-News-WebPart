@@ -1,0 +1,49 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+// .NewsItems{
+//   border-top: 2px solid gray;
+//   margin-top: 40px;
+// }
+.Cards{
+  margin-left: -43px;
+}
+
+.Card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: stretch;
+  color:black;
+  font-weight: 300; 
+}
+
+.CardItem1 {
+  padding-top: 10px;
+}
+.CardItem2 {
+  padding-top: 2px;
+}
+.CardImage{
+  height: 131px;
+  width: 174px;
+  border-style: double;
+  border-width: thick;
+  padding: 10px;
+}
+
+.NewsItems{
+  cursor: pointer;
+  padding: 11px 25px;
+  margin-top: 15px;
+  border-top: 2px solid gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 500ms ease;
+  &:hover {
+    transform: scale(1.1);
+    // color: rgb(10, 81, 195);
+  }
+}
+
+.NewsTitle{
+  color: #399fea;
+}
