@@ -4,46 +4,199 @@
 //   border-top: 2px solid gray;
 //   margin-top: 40px;
 // }
+// .Cards{
+//   margin-left: -43px;
+// }
+
 .Cards{
-  margin-left: -43px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  justify-content: center;
+}
+
+.NewsItems{
+  justify-content: center;
+  cursor: pointer;
+  flex: 0 0 calc(48% - 10px);
+  margin:16px 12px;
+  // border-top: 2px solid gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 500ms ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .Card {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  justify-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
   color:black;
   font-weight: 300; 
 }
 
+// .Card div{
+//   padding:15px;
+// }
+
+// .Card {
+//   width: 100%;
+//   display: grid;
+//   grid-template-columns: 1fr 2fr;
+//   justify-items: stretch;
+//   color:black;
+//   font-weight: 300; 
+// }
+.CardItemsContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .CardItem1 {
-  padding-top: 10px;
+   padding:15px 15px 0 15px;
+   display: flex;
+  justify-content: center;
 }
 .CardItem2 {
-  padding-top: 2px;
+  padding:0 15px 15px 15px;
 }
+
+.ImageContainer{
+  padding:2px;
+}
+
 .CardImage{
-  height: 131px;
-  width: 174px;
+  // height: 117px;
+  // width: 189px;
+  height: 160px;
+  width: 285px;
   border-style: double;
   border-width: thick;
   padding: 10px;
 }
 
-.NewsItems{
-  cursor: pointer;
-  padding: 11px 25px;
-  margin-top: 15px;
-  border-top: 2px solid gray;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: transform 500ms ease;
-  &:hover {
-    transform: scale(1.1);
-    // color: rgb(10, 81, 195);
-  }
-}
+// .NewsItems{
+//   cursor: pointer;
+//   padding: 11px 25px;
+//   margin-top: 15px;
+//   border-top: 2px solid gray;
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//   transition: transform 500ms ease;
+//   &:hover {
+//     transform: scale(1.1);
+//     // color: rgb(10, 81, 195);
+//   }
+// }
 
 .NewsTitle{
   color: #399fea;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.PubDate{
+  font-size: 10px;
+  font-weight: bold;
+}
+.Description{
+  margin-top:3px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 800px) {
+  .CardImage{
+    height: 162px;
+    width: 262px;
+    padding: 0;  
+  }
+  .NewsItems{  
+    flex: 0 0 calc(10px);
+    margin:12px; 
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .CardImage{
+    height: 136px;
+    width: 225px;
+    padding: 0;  
+  }
+  .NewsItems{  
+    flex: 0 0 calc(10px);
+    margin:12px; 
+  }
+  
+}
+
+@media only screen and (max-width: 736px) {
+  .CardImage{
+    height: 132px;
+    width: 222px;
+    padding: 0;  
+  }
+  .NewsItems{  
+    flex: 0 0 calc(10px);
+    margin:12px; 
+  }
+  
+}
+
+@media only screen and (max-width: 720px) {
+  .CardImage{
+    height: 136px;
+    width: 204px;
+    padding: 0;  
+  }
+  .NewsItems{  
+    flex: 0 0 calc(10px);
+    margin:12px; 
+  }
+  
+}
+
+@media only screen and (max-width: 640px) {
+  .CardImage{
+    height: 121px;
+    width: 182px;
+    padding: 0;  
+  }
+  .NewsItems{  
+    flex: 0 0 calc(10px);
+    margin:12px; 
+  }
+  
+}
+
+@media only screen and (max-width: 568px) 
+{
+  .CardImage{
+    height: 98px;
+    width: 160px;
+    padding: 0;  
+  }
+  .NewsItems{  
+    flex: 0 0 calc(10px);
+    margin:10px 5px; 
+  }
+
+  .NewsTitle{
+    font-size: 8px;
+  }
+  .PubDate{
+    font-size: 8px;
+  }
+  .Description{
+    font-size: 8px;
+  }
+}
+
+
+@media only screen and (max-width: 320px){
+  .CardImage{
+    height: 77px;
+    width: 132px;
+    padding: 0;  
+  }
 }

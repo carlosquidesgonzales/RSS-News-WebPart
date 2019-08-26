@@ -1,6 +1,8 @@
 export interface IRssProps {
   description: string;
   newsItems: string;
+  newsSource:string;
+  layoutOption: string;
 }
 
 export interface INewsList{
